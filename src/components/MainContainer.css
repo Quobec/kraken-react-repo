@@ -1,0 +1,13 @@
+#mainContainerId
+{
+	display: block;
+	background-color: #d3d3d3;
+	width: 80%;
+	min-height: 1000px;
+	height: fit-content;
+	margin: auto;
+
+    box-shadow: 0 0 10px #000;
+
+    z-index: 1;
+}

@@ -1,14 +1,3 @@
 .App {
   text-align: center;
 }
-
-#mainContainerId
-{
-	display: block;
-	background-color: grey;
-	width: 80%;
-	min-height: 1000px;
-	height: fit-content;
-	margin: auto;
-}
-

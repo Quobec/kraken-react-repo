@@ -1,4 +1,5 @@
 import React from "react";
+import './MainContainer.css';
 
 function MainContainer(){
  	return (
