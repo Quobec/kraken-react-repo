@@ -1,8 +1,10 @@
-function MainContainer() {
+import React from "react";
+
+function MainContainer(){
  	return (
         <>
-            <div className="mainContainerClass">
-                This is the main container.
+            <div id="mainContainerId">
+
             </div>
         </>
     );
