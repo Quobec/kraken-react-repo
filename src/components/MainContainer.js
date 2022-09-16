@@ -1,11 +1,11 @@
 import React from "react";
 import './MainContainer.css';
 
-function MainContainer(){
+function MainContainer({children}){
  	return (
         <>
             <div id="mainContainerId">
-
+                {children}
             </div>
         </>
     );

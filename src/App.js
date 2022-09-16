@@ -3,16 +3,13 @@ import MainContainer from './components/MainContainer';
 import Header from "./components/Header.js";
 import ButtonClicker from "./components/ButtonClicker";
 import './App.css';
-//import './components/Header.css'
 
-function App({children}) {
+function App() {
  	 return (
   	  	<div className="App">
-			<Header>dfbdfbfdfgnfg</Header>
+			<Header></Header>
 			<MainContainer>
-
-			{/* how do i put a component in here.*/}
-
+				<ButtonClicker></ButtonClicker>
 			</MainContainer>
 			
    		</div>
