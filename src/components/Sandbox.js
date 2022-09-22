@@ -1,6 +1,6 @@
 import React from "react";
 
-function Sandbox(){
+function Sandbox(props){
 
     const numbers = [1,2,3,4,5];
     const list = numbers.map((number) => 
@@ -14,6 +14,7 @@ function Sandbox(){
  	return (
         <>
             <ul>{list}</ul>
+            {props.children}
         </>
     );
 }

@@ -3,6 +3,7 @@ import MainContainer from './components/MainContainer';
 import Header from "./components/Header.js";
 import ButtonClicker from "./components/ButtonClicker";
 import Sandbox from "./components/Sandbox";
+import Composition2 from "./components/CompositionAndInheritance";
 import './App.css';
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
 			<Header></Header>
 			<MainContainer>
 				<ButtonClicker></ButtonClicker>
-				<Sandbox></Sandbox>
+				<Sandbox>'Children'</Sandbox>
+				<Composition2></Composition2>
 			</MainContainer>
 			
    		</div>
