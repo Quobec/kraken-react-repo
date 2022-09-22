@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './ButtonClicker.js';
 
-function ButtonClicker(props){
+function ButtonClicker(){
 
     const [timesClicked, setCount] = useState(0);
     const unreadMessages = timesClicked;
@@ -17,6 +17,7 @@ function ButtonClicker(props){
                         You have {unreadMessages} unread messages.
                     </h2>
                 }
+                
             </div>
         </>
     );
