@@ -1,24 +1,19 @@
-import React from "react";
-import MainContainer from './components/MainContainer';
-import Header from "./components/Header.js";
-import ButtonClicker from "./components/ButtonClicker";
-import Sandbox from "./components/Sandbox";
-import Composition2 from "./components/CompositionAndInheritance";
+import React, { useState } from "react";
 import './App.css';
+import Website from "./Website.js";
 
 function App() {
- 	 return (
-  	  	<div className="App">
-			<Header></Header>
-			<MainContainer>
-				<ButtonClicker></ButtonClicker>
-				<Sandbox>'Children'</Sandbox>
-				<Composition2></Composition2>
-			</MainContainer>
-			
-   		</div>
- 	 );
+	
+	const [CurrentSite, ChangeSiteVar] = useState('mainSite');
+	return (
+		<div className="App">
+			<Website site={CurrentSite} changeSite={ChangeSiteVar}>
+				<button onClick={ () => ChangeSiteVar('aaa')}>Go to aaa</button>
+			</Website>
+            <button onClick={() => ChangeSiteVar('mainSite')}>Go to Main Site</button>
+		</div>
+ 	);
+ 	
 }
-
 
 export default App;
